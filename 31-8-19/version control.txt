@@ -1,0 +1,79 @@
+
+kvsw11@kvsw11-PC MINGW64 ~
+$ cd versioncontrol
+bash: cd: versioncontrol: No such file or directory
+
+kvsw11@kvsw11-PC MINGW64 ~
+$ cd Desktop
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop
+$ cd versioncontrol
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/kvsw11/Desktop/versioncontrol/.git/
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git status
+On branch master
+Your branch is up to date with 'version-control/master'.
+
+nothing to commit, working tree clean
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git add workflow-of-version-control
+fatal: pathspec 'workflow-of-version-control' did not match any files
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git add workflow-of-version-control.pdf
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git status
+On branch master
+Your branch is up to date with 'version-control/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   workflow-of-version-control.pdf
+
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git commit -m "workflow-of-version-control.pdf"
+[master 73c459c] workflow-of-version-control.pdf
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 workflow-of-version-control.pdf
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git log
+commit 73c459ce57c36737e5d0d3505e6cd6d8a81c849e (HEAD -> master)
+Author: gayathri-4 <lekireddygayathri88@gmail.com>
+Date:   Fri Aug 30 16:52:23 2019 +0530
+
+    workflow-of-version-control.pdf
+
+commit cfe7165fcd19e54b36290da500d7e21aef9d049a (version-control/master)
+Author: gayathri-4 <54699618+gayathri-4@users.noreply.github.com>
+Date:   Fri Aug 30 16:09:07 2019 +0530
+
+    Create README.md
+
+commit c10262a8c858841159b8cc4858c8a5902882fbc8
+Author: gayathri-4 <lekireddygayathri88@gmail.com>
+Date:   Fri Aug 30 16:03:26 2019 +0530
+
+    trying
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$ git push -u version-control master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 540.00 KiB | 11.02 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gayathri-4/version-control
+   cfe7165..73c459c  master -> master
+Branch 'master' set up to track remote branch 'master' from 'version-control'.
+
+kvsw11@kvsw11-PC MINGW64 ~/Desktop/versioncontrol (master)
+$
